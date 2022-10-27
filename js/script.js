@@ -68,12 +68,13 @@ createApp({
             }
         },
         autoScroll(){
-            setInterval(()=>{
+
+            this.autoscroll = setInterval(()=>{
                 this.nextbtn();
             },2000)
         },
         stopScroll(){
-            clearInterval(this.autoScroll);
+            clearInterval(this.autoscroll);
         }
     },
     mounted(){
